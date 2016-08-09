@@ -1,0 +1,9 @@
+<h1><%= @task.name %><% if @task.status == true %>
+  <i class="fa fa-check-square-o" aria-hidden="true"></i>
+  <% elsif %>
+  <i class="fa fa-square-o" aria-hidden="true"></i>
+  <% end %></h1>
+
+  <%= link_to "Back to tasks", tasks_path %>
+  <%= link_to "Edit", edit_task_path(@task) %>
+  <%= link_to "Delete", task_path(@task), method: :delete %>

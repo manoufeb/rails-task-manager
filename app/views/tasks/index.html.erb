@@ -1,0 +1,12 @@
+<%= link_to new_task_path do %>
+<i class="fa fa-plus-circle fa-5x" aria-hidden="true"></i>
+<% end %>
+
+<% @tasks.each do |task| %>
+<h2><%= link_to task.name.capitalize, task_path(task) %></h2>
+<% if task.status == true %>
+<i class="fa fa-check-square-o" aria-hidden="true"></i>
+<% elsif %>
+<i class="fa fa-square-o" aria-hidden="true"></i>
+<% end %>
+<% end %>

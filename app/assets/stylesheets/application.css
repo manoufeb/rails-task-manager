@@ -1,3 +1,14 @@
+body {
+  background-color: #374F6A;
+  color:#E6E6E6;
+  text-align: center;
+}
+
+a {
+  color:#E6E6E6;
+  text-decoration: none;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
